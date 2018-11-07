@@ -22,7 +22,7 @@ Subject: Github commands
 >>> git log 
 
 // Add the specific file to staging area
->>> git add <filename>
+>>> git add /filename/
 
 // Add all files in current directory to staging area
 >>> git add .
@@ -69,14 +69,14 @@ Subject: Github commands
 >>> git log --graph --all --decorate --oneline
 
 // To delete a single file, also stages the fact that file is deleted. Checkout the status of the repo as well.
->>> git rm <file-name>
+>>> git rm /file-name/
 >>> git status
 
 // To list out the deleted files that are in staged now.
 >>> git add -u .
 
 // leave the file in the file system, but don't let git track the file anymore. Keep it igroned.
->>> git rm --cached <filename>
+>>> git rm --cached /filename/
 >>> git status
 
 // Move the files, make sure all files involved should be in the version control - staged.
@@ -104,7 +104,7 @@ ex: git mv test.txt levelone/test.txt
 >>> git branch
 
 // Rewritten the working tree from specific commit - Detatched HEAD state.
->>> git checkout <commit-id>
+>>> git checkout /commit-id/
 >>> git branch
 // Come back to current branch from Detatched HEAD. we can't do any commits in HEAD state.
 >>> git checkout new-brach
@@ -115,7 +115,7 @@ ex: git mv test.txt levelone/test.txt
 // Merge the branches
 >>> git checkout master
 >>> git branch
->>> git merge <branch-name>
+>>> git merge /branch-name/
 >>> git log
 
 // Clean up your directory from last commit of your current branch.
@@ -123,19 +123,19 @@ ex: git mv test.txt levelone/test.txt
 >>> git merge --abort
 
 // get all the commits of a specific branch.
->>> git merge --squash <target-branch-name>
+>>> git merge --squash /target-branch-name/
 
 // List out commits that happened.
 >>> git log --online --graph --decorate --all -10
 
 // Delete the specific branch.
->>> git branch -d <branch-name>
+>>> git branch -d /branch-name/
 
 // Adding a git remote.
->>> git remote add origin https://github.com/<user-name>/<repo-name>.git
+>>> git remote add origin https://github.com/user-name/repo-name/.git
 
 // Edit the assigned remote uri.
->>> git remote set-url origin https://github.com/<user-name>/<repo-name>.git
+>>> git remote set-url origin https://github.com/user-name/repo-name.git
 
 // Delete the remote.
 >>> git remote rm origin
@@ -164,10 +164,10 @@ ex: git mv test.txt levelone/test.txt
 >>> git rebase master
 
 // Clone specific  branch from git repo.
->>> git clone -b <branch-name> <master-repo-name>
+>>> git clone -b /branch-name/ /master-repo-name/
 
 // Push he repo to specific repo
->>> git push origin <branch-name>
+>>> git push origin /branch-name/
 
 // To get the irgin URL
 >>> git remote get-url origin
