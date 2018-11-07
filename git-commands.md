@@ -1,7 +1,6 @@
------------------------------------------------------------------------------------------------------------------------------Name: Bhanu Prakash Kandregula
+Name: Bhanu Prakash Kandregula
 Email: bkandreg@bhanukandregula.com
 Subject: Github commands 
------------------------------------------------------------------------------------------------------------------------------
 
 // Configure your git user name
 >>> git config --global user.name
